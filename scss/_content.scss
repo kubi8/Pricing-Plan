@@ -1,0 +1,179 @@
+
+.price-page{
+    width: 300px;
+    text-align: right;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__navigation{
+        width: 100%;
+    }
+    @media (min-width: 1024px){
+    width: 870px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.navigation__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8rem;
+    &--home{
+        @media (min-width: 1024px){
+            font-size: 2.2rem;
+        }
+    }
+    @media (min-width:1024px){
+        font-size: 2rem;
+    }
+}
+.pricing-plan{
+    width: 280px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 1px 1px 3px $dark;
+    border-radius: 5px;
+    position: relative;
+    @media (min-width: 900px){
+
+    }
+    &__image--picture{
+        width: 100%;
+        border-radius: 5px;
+    }
+    &__title{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    &__subtitle{
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    &__list{
+        list-style: none;
+        padding: 0 10px 0 0;
+        text-align: end;
+        line-height: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: .9rem;
+    }
+    &__price{
+        font-size: 2rem;
+    }
+    &__btn--one, &__btn--two, &__btn--three{
+        padding: 0 30px;
+        color: $white;
+        font-size: 2rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        border: 1px solid $white;
+        transition: background .9s, border 1s;
+    }
+    &__btn--one{
+        background: $one;
+        &:hover>.select{
+            color: $one;
+        }
+        &:hover{
+            background: $white;
+            border: 1px solid $one;
+        }
+        &:focus{
+            outline: 1px dotted $dark;
+        }
+    }
+    &__btn--two{
+        background: $two;
+        &:focus{
+            outline: 1px dotted $dark;
+        }
+        &:hover>.select{
+            color: $two;
+        }
+        &:hover{
+            background: $white;
+            border: 1px solid $two;
+        }
+    }
+    &__btn--three{
+        background: $three;
+        &:hover>.select{
+            color: $three;
+        }
+        &:hover{
+            background: $white;
+            border: 1px solid $three;
+        }
+        &:focus{
+            outline: 1px dotted $dark;
+        }
+    }
+    &__text{
+        font-size: .8rem;
+    }
+}
+}
+.home{
+    color: $red;
+    text-decoration: none;
+    &:focus{
+        outline: 1px dotted $dark;
+    }
+}
+.bigger{
+    height: 195px;
+}
+.big{
+    margin-bottom: 40px;
+}
+.yes{
+    position: relative;
+    &::before{
+        content: url(../img/check.svg);
+        position: absolute;
+        left: 20px;
+    }
+}
+.no{
+    position: relative;
+    &::before{
+        content: url(../img/exit.svg);
+        position: absolute;
+        left: 20px;
+    }
+}
+.widget1, .widget2, .widget3{
+    position: relative;
+    &::after{
+        content: url(../img/quest.svg);
+        position: absolute;
+        left: 80px;
+    }
+}
+.info-1, .info-3{
+    position: absolute;
+    width: 280px;
+    height: 20px;
+    top: 145px;
+    left: calc(50% - 280px / 2);
+    text-align: center;
+    opacity: 0;
+}
+.info-midle{
+    position: absolute;
+    width: 280px;
+    height: 20px;
+    top: 172px;
+    left: calc(50% - 280px / 2);
+    text-align: center;
+    opacity: 0;
+}
+.active{
+    opacity: .7;
+}

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Viga&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+}
+
+body {
+  font-family: 'Viga', sans-serif;
+  font-size: inherit;
+}
+
+.price-page {
+  width: 300px;
+  text-align: right;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-page__navigation {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .price-page {
+    width: 870px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.price-page .navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 1024px) {
+  .price-page .navigation__list--home {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .price-page .navigation__list {
+    font-size: 2rem;
+  }
+}
+
+.price-page .pricing-plan {
+  width: 280px;
+  margin: 20px auto;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 3px #0f0f0f;
+          box-shadow: 1px 1px 3px #0f0f0f;
+  border-radius: 5px;
+  position: relative;
+}
+
+.price-page .pricing-plan__image--picture {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.price-page .pricing-plan__title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.price-page .pricing-plan__subtitle {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.price-page .pricing-plan__list {
+  list-style: none;
+  padding: 0 10px 0 0;
+  text-align: end;
+  line-height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: .9rem;
+}
+
+.price-page .pricing-plan__price {
+  font-size: 2rem;
+}
+
+.price-page .pricing-plan__btn--one, .price-page .pricing-plan__btn--two, .price-page .pricing-plan__btn--three {
+  padding: 0 30px;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -webkit-transition: background .9s, border 1s;
+  transition: background .9s, border 1s;
+}
+
+.price-page .pricing-plan__btn--one {
+  background: #ffbe06;
+}
+
+.price-page .pricing-plan__btn--one:hover > .select {
+  color: #ffbe06;
+}
+
+.price-page .pricing-plan__btn--one:hover {
+  background: #fff;
+  border: 1px solid #ffbe06;
+}
+
+.price-page .pricing-plan__btn--one:focus {
+  outline: 1px dotted #0f0f0f;
+}
+
+.price-page .pricing-plan__btn--two {
+  background: #ff7e18;
+}
+
+.price-page .pricing-plan__btn--two:focus {
+  outline: 1px dotted #0f0f0f;
+}
+
+.price-page .pricing-plan__btn--two:hover > .select {
+  color: #ff7e18;
+}
+
+.price-page .pricing-plan__btn--two:hover {
+  background: #fff;
+  border: 1px solid #ff7e18;
+}
+
+.price-page .pricing-plan__btn--three {
+  background: #ff5442;
+}
+
+.price-page .pricing-plan__btn--three:hover > .select {
+  color: #ff5442;
+}
+
+.price-page .pricing-plan__btn--three:hover {
+  background: #fff;
+  border: 1px solid #ff5442;
+}
+
+.price-page .pricing-plan__btn--three:focus {
+  outline: 1px dotted #0f0f0f;
+}
+
+.price-page .pricing-plan__text {
+  font-size: .8rem;
+}
+
+.home {
+  color: #f00000;
+  text-decoration: none;
+}
+
+.home:focus {
+  outline: 1px dotted #0f0f0f;
+}
+
+.bigger {
+  height: 195px;
+}
+
+.big {
+  margin-bottom: 40px;
+}
+
+.yes {
+  position: relative;
+}
+
+.yes::before {
+  content: url(../img/check.svg);
+  position: absolute;
+  left: 20px;
+}
+
+.no {
+  position: relative;
+}
+
+.no::before {
+  content: url(../img/exit.svg);
+  position: absolute;
+  left: 20px;
+}
+
+.widget1, .widget2, .widget3 {
+  position: relative;
+}
+
+.widget1::after, .widget2::after, .widget3::after {
+  content: url(../img/quest.svg);
+  position: absolute;
+  left: 80px;
+}
+
+.info-1, .info-3 {
+  position: absolute;
+  width: 280px;
+  height: 20px;
+  top: 145px;
+  left: calc(50% - 280px / 2);
+  text-align: center;
+  opacity: 0;
+}
+
+.info-midle {
+  position: absolute;
+  width: 280px;
+  height: 20px;
+  top: 172px;
+  left: calc(50% - 280px / 2);
+  text-align: center;
+  opacity: 0;
+}
+
+.active {
+  opacity: .7;
+}
+/*# sourceMappingURL=style.css.map */
