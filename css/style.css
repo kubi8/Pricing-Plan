@@ -13,6 +13,10 @@ html {
 body {
   font-family: 'Viga', sans-serif;
   font-size: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .price-page {
